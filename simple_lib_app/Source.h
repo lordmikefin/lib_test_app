@@ -1,0 +1,2 @@
+
+int printToConsole(char* msg);
