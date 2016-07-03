@@ -1,0 +1,3 @@
+[submodule "lib_test_app_core"]
+	path = lib_test_app_core
+	url = https://github.com/lordmikefin/lib_test_app_core.git

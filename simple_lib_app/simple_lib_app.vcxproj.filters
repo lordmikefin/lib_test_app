@@ -30,7 +30,7 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Source.h">
+    <ClInclude Include="..\lib_test_app_core\Source.h">
       <Filter>Header Files\src</Filter>
     </ClInclude>
   </ItemGroup>
@@ -41,7 +41,7 @@
     <ClCompile Include="simple_lib_app.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Source.cpp">
+    <ClCompile Include="..\lib_test_app_core\Source.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,0 +1,11 @@
+
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+--
+
+https://github.com/lordmikefin/lib_test_app_core.git
+--
+
+$ git submodule add https://github.com/lordmikefin/lib_test_app_core.git
+
+--
