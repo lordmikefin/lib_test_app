@@ -6,10 +6,12 @@ https://git-scm.com/book/en/v2/Git-Tools-Submodules
 Testing clone of project with submodule
 $ git clone https://github.com/lordmikefin/lib_test_app.git lib_test_app_clone
 $ cd lib_test_app_clone/
+$ git submodule init
+$ git submodule update
 
+Simpler way to clone
+$ git clone --recursive https://github.com/lordmikefin/lib_test_app.git lib_test_app_clone
 
-
-$ cd simple_lib_app
 
 --
 
