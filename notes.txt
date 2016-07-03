@@ -47,7 +47,12 @@ $ git submodule update --remote
 Fetch newest changes.
 $ git pull origin master
 
-After pull submodule has only fetched not merged.
+After pull submodule has only fetched not merged. Lets merge all submodules.
 $ git submodule update --remote --merge
+
+--
+
+Push changes to repository.
+$ git push origin master --recurse-submodules=on-demand
 
 --
