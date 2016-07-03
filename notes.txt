@@ -12,11 +12,13 @@ $ git submodule update
 Simpler way to clone
 $ git clone --recursive https://github.com/lordmikefin/lib_test_app.git lib_test_app_clone
 
-
 --
 
 Add submodule to project
 $ git submodule add https://github.com/lordmikefin/lib_test_app_core.git
 
+Define branch for submodule
+$ git config -f .gitmodules submodule.lib_test_app_core.branch master
+$ git submodule update --remote
 
 --
