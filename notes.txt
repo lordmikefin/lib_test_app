@@ -12,11 +12,26 @@ $ git submodule update
 Simpler way to clone
 $ git clone --recursive https://github.com/lordmikefin/lib_test_app.git lib_test_app_clone
 
+By default submodule points to commit ID instead of branch.
+Change submodule to branch so we can commit our changes. (look used branch from .gitmodules -file)
+$ cd lib_test_app_core/
+$ git checkout master
+$ cd ..
+
 --
 
 Show status also from submodule (local config - is not stored in the project)
 $ git config status.submodulesummary 1
 $ git status
+
+--
+
+Show submodule difference
+$ git diff --submodule
+
+Set config to show submodules w/o --submodule parameter
+$ git config --global diff.submodule log
+$ git diff
 
 --
 
@@ -26,5 +41,13 @@ $ git submodule add https://github.com/lordmikefin/lib_test_app_core.git
 Define branch for submodule (config is stored in the project)
 $ git config -f .gitmodules submodule.lib_test_app_core.branch master
 $ git submodule update --remote
+
+--
+
+Fetch newest changes.
+$ git pull origin master
+
+After pull submodule has only fetched not merged.
+$ git submodule update --remote --merge
 
 --
