@@ -14,10 +14,16 @@ $ git clone --recursive https://github.com/lordmikefin/lib_test_app.git lib_test
 
 --
 
+Show status also from submodule (local config - is not stored in the project)
+$ git config status.submodulesummary 1
+$ git status
+
+--
+
 Add submodule to project
 $ git submodule add https://github.com/lordmikefin/lib_test_app_core.git
 
-Define branch for submodule
+Define branch for submodule (config is stored in the project)
 $ git config -f .gitmodules submodule.lib_test_app_core.branch master
 $ git submodule update --remote
 
