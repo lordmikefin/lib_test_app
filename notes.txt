@@ -3,9 +3,18 @@ https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 --
 
-https://github.com/lordmikefin/lib_test_app_core.git
+Testing clone of project with submodule
+$ git clone https://github.com/lordmikefin/lib_test_app.git lib_test_app_clone
+$ cd lib_test_app_clone/
+
+
+
+$ cd simple_lib_app
+
 --
 
+Add submodule to project
 $ git submodule add https://github.com/lordmikefin/lib_test_app_core.git
+
 
 --
